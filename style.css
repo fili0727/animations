@@ -1,20 +1,103 @@
 /* lidt justering af "baner" og billeder */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 ul li {
-    background-color: #eee;
-    margin-block-end: 1em;
-    height: 5.5em;
+  background-color: #eee;
+  margin-block-end: 1em;
+  height: 5.5em;
 }
 
 ul li img {
-    max-height: 5em;
-    max-width: 10em;
+  max-height: 5em;
+  max-width: 10em;
 }
 
 /* animationer */
-
+#robot {
+  animation-name: robot;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes robot {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(85vw, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+#bunny {
+  animation-name: bunny;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+@keyframes bunny {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(85vw, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+#turtle {
+  animation-name: turtle;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+@keyframes turtle {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(85vw, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+#car {
+  animation-name: car;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0.7, 0.41, 0.51, 0.74);
+  animation-iteration-count: infinite;
+}
+@keyframes car {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(85vw, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+#ball {
+  animation-name: ball;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes ball {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(85vw, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
