@@ -92,12 +92,30 @@ ul li img {
 }
 @keyframes ball {
   0% {
-    transform: translate(0, 0);
+    transform: translate(0%, 0%);
+  }
+  20% {
+    transform: translate(31%, 50%);
+  }
+  40% {
+    transform: translate(40%, 60%);
   }
   50% {
-    transform: translate(85vw, 0);
+    transform: translate(50%, 70%);
+  }
+  60% {
+    transform: translate(60%, 80%);
+  }
+  70% {
+    transform: translate(70%, 90%);
+  }
+  80% {
+    transform: translate(80%, 100%);
+  }
+  85% {
+    transform: translate(90%, 110%);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translate(100%, 120%);
   }
 }
